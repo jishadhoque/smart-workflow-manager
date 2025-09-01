@@ -1,6 +1,7 @@
 ﻿"use client";
 
 import { useState } from "react";
+import ProjectList from "./ProjectList"; // Add this import
 
 export default function Dashboard() {
   const [activeTab, setActiveTab] = useState("projects");
@@ -37,7 +38,7 @@ export default function Dashboard() {
       </div>
 
       <div className="bg-white rounded-lg shadow p-6">
-        {activeTab === "projects" && <p>Projects content goes here...</p>}
+        {activeTab === "projects" && <ProjectList />} {/* Changed this line */}
         {activeTab === "invoices" && <p>Invoices content goes here...</p>}
         {activeTab === "clients" && <p>Clients content goes here...</p>}
       </div>

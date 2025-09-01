@@ -1,5 +1,9 @@
-﻿import Dashboard from "@/components/Dashboard";
+﻿import Dashboard from '@/components/Dashboard';
 
 export default function Home() {
-  return <Dashboard />;
+  return (
+    <main className="min-h-screen bg-gray-50">
+      <Dashboard />
+    </main>
+  );
 }
